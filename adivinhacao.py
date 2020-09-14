@@ -44,7 +44,7 @@ for rodada in range(1, total_de_tentativas + 1):
             print("Você errou! O seu chute foi maior que o número secreto.")
         else:
             print("Você errou! O seu chute foi menor que o número secreto.")
-        pontos_perdidos = abs(numero_secreto) - abs(chute)
-        pontos = pontos - abs(pontos_perdidos)
+        pontos_perdidos = abs(numero_secreto - chute)
+        pontos = pontos - pontos_perdidos
 
 print("Fim do jogo!")
